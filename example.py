@@ -10,8 +10,10 @@ class MyWidget(QtWidgets.QWidget):
         self.hello = ['Hello World!', 'Namastey', 'Ki Bolche']
 
         self.button = QtWidgets.QPushButton('Button')
+        self.button.setStyleSheet("font-size: 20px")
         self.text = QtWidgets.QLabel("Hello World!",
                                     alignment=QtCore.Qt.AlignCenter)
+        self.text.setStyleSheet("font-size: 20px")
         self.layout = QtWidgets.QVBoxLayout(self)
         self.layout.addWidget(self.text)
         self.layout.addWidget(self.button)
